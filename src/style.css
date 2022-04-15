@@ -47,7 +47,7 @@
 
 @layer components {
   .hamburger {
-    @apply flex flex-col justify-center items-center;
+    @apply flex flex-col justify-center items-center min-h-[44px];
     @apply border-2 border-[color:var(--base-border-color)] p-2;
   }
   .hamburger__line {
@@ -70,8 +70,20 @@
     @apply hidden;
   }
 
-  .navbar__items.show {
+  .navbar--show .navbar__items {
     @apply block z-10;
+  }
+
+  .navbar--show .hamburger__line:nth-child(1) {
+    @apply rotate-45 translate-y-1 transition-transform duration-300 ease-linear;
+  }
+
+  .navbar--show .hamburger__line:nth-child(2) {
+    @apply hidden;
+  }
+
+  .navbar--show .hamburger__line:nth-child(3) {
+    @apply rotate-[-45deg] translate-y-[-4px] transition-transform duration-300 ease-linear;
   }
 
   .navbar__item {
