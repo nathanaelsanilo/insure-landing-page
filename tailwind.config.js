@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      DMSerif: ["DMSerif", "sans-serif"],
+    }
   },
   plugins: [],
 }
