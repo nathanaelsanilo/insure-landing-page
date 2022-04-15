@@ -3,9 +3,14 @@ module.exports = {
     "./src/*.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "navbar-pattern-mobile":"url(/images/bg-pattern-mobile-nav.svg)",
+      }
+    },
     fontFamily: {
       DMSerif: ["DMSerif", "sans-serif"],
+      Karla: ["Karla", "sans-serif"],
     }
   },
   plugins: [],

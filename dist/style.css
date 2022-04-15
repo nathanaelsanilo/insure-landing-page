@@ -423,10 +423,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+* {
+  color: var(--base-font-color);
+}
+
 html, body {
-  font-family: "DMSerif", "sans-serif";
+  font-family: "Karla", system-ui, "sans-serif";
   font-size: var(--base-font-size);
   font-weight: var(--base-font-weight);
+}
+
+header {
+  font-family: "Karla", system-ui, "sans-serif";
 }
 
 *, ::before, ::after {
@@ -474,13 +482,75 @@ html, body {
   --tw-backdrop-sepia:  ;
 }
 
-.italic {
-  font-style: italic;
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-color: var(--base-border-color);
+  padding: 0.5rem;
 }
 
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.hamburger__line {
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+  height: 4px;
+  width: 25px;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  background-color: var(--base-font-color);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: var(--navbar-height);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.navbar__brand {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.navbar__items {
+  position: absolute;
+  top: var(--navbar-height);
+  left: 0px;
+  width: 100%;
+  background-color: var(--dark-violet);
+  background-image: url(/images/bg-pattern-mobile-nav.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  height: calc(100vh - var(--navbar-height));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  display: none;
+}
+
+.navbar__items.show {
+  display: block;
+}
+
+.navbar__item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 :root {
@@ -491,18 +561,23 @@ html, body {
   --very-light-gray: hsl(0, 0%, 98%);
   --base-font-size: 16px;
   --base-font-weight: 400;
+  --base-font-color: #444444;
+  --base-border-color: var(--base-font-color);
+  --navbar-height: 75px;
 }
 
-/* 
-  TODO:
-  add font family for body
-*/
+@font-face {
+  font-family: "Karla";
+
+  src: local("Karla"),
+  url("./../font/Karla-VariableFont_wght.ttf"),
+  url("./../font/Karla-Italic-VariableFont_wght.ttf");
+}
 
 @font-face {
   font-family: "DMSerif";
 
-  src: url(
-    "./../font/DMSerifDisplay-Regular.ttf",
-    "./../font/DMSerifDisplay-Italic.ttf"
-  )
+  src: local("DMSerif"),
+  url("./../font/DMSerifDisplay-Regular.ttf"),
+  url("./../font/DMSerifDisplay-Italic.ttf");
 }
