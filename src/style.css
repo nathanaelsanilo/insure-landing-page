@@ -43,10 +43,6 @@
     font-size: var(--base-font-size);
     font-weight: var(--base-font-weight);
   }
-
-  header {
-    font-family: "Karla", system-ui, "sans-serif";
-  }
 }
 
 @layer components {
@@ -75,10 +71,37 @@
   }
 
   .navbar__items.show {
-    @apply block;
+    @apply block z-10;
   }
 
   .navbar__item {
     @apply text-white font-medium uppercase py-4 tracking-wide text-xl;
   }
+
+  .btn {
+    @apply border-2 py-2 px-6 uppercase text-white;
+  }
+
+  .btn--outline {
+    @apply border-white;
+  }
+}
+
+body.navbar--show {
+  @apply overflow-hidden;
+}
+
+.article {
+  @apply bg-[color:var(--dark-violet)] bg-no-repeat;
+  @apply bg-pattern-intro-left-mobile;
+  @apply lg:bg-pattern-intro-left-desktop;
+  @apply flex flex-col py-20 px-5;
+}
+
+.article__content {
+  @apply text-center text-white mb-8;
+}
+
+.article__title {
+  @apply text-4xl mb-4 font-DMSerif  text-white text-center;
 }

@@ -6,6 +6,9 @@
   hamburger.addEventListener("click", toggleMenu);
 
   function toggleMenu() {
-    navbar.classList.toggle("show")
+    navbar.classList.toggle("show");
+    
+    const [body] = document.getElementsByTagName("body");
+    body.classList.toggle("navbar--show");
   }
 })()
