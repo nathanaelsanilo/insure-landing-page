@@ -19,7 +19,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="">
     <nav class="navbar">
       <a href="#" class="navbar__brand">
         <img src="./../images/logo.svg" alt="INSURE">
@@ -29,6 +29,7 @@
         <div class="hamburger__line"></div>
         <div class="hamburger__line"></div>
       </div>
+      <!-- MOBILE MENUS -->
       <ul class="navbar__items">
         <li class="navbar__item">
           <a href="#">How We Work</a>
@@ -43,29 +44,60 @@
           <a href="#">View Plans</a>
         </li>
       </ul>
+      <!-- DESKTOP MENU -->
+      <ul class="navbar__items--desktop">
+        <li class="navbar__item">
+          <a href="#">How We Work</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#">Account</a>
+        </li>
+        <li class="navbar__item">
+          <button class="btn btn--outline btn--violet">View Plans</button>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="">
     <section class="relative">
-      <div class="w-12/12 mx-auto">
-        <picture>
-          <source media="(min-width: 768px)" srcset="./../images/image-intro-desktop.jpg" type="image/jpg" class="w-full">
-          <img src="./../images/image-intro-mobile.jpg" alt="image-intro" class="w-full">
-        </picture>
-      </div>
       <article class="article relative">
-        <h2 class="article__title">Humanizing your insurance.</h2>
-        <p class="article__content">
-          Get your life insurance coverage easier and faster. We blend our expertise 
-          and technology to help you find the plan that’s right for you. Ensure you 
-          and your loved ones are protected.
-        </p>
-        <div class="text-center">
-          <button class="btn btn--outline">View Plans</button>
+        <div class="flex-1 px-5 py-20 space-y-12">
+          <div class="hidden lg:block h-px bg-very-light-gray w-1/3"></div>
+          <h2 class="article__title">Humanizing your insurance.</h2>
+          <p class="article__content">
+            Get your life insurance coverage easier and faster. We blend our expertise 
+            and technology to help you find the plan that’s right for you. Ensure you 
+            and your loved ones are protected.
+          </p>
+          <div class="text-center lg:text-left">
+            <button class="btn btn--outline">View Plans</button>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img
+            src="./../images/image-intro-mobile.jpg"
+            srcset="./../images/image-intro-mobile.jpg 640w,
+                    ./../images/image-intro-desktop.jpg 1024w"
+            sizes="(max-width: 1024px) 640px,
+                    1024px"
+            alt="image-intro"
+            class="w-full lg:relative lg:top-[90px]"
+          >
         </div>
       </article>
-      <div class="absolute right-0 bottom-[-11rem]">
-        <img src="./../images/bg-pattern-intro-right-mobile.svg" alt="Pattern Intro Right Mobil">
+      <div class="absolute right-0 bottom-0 hidden">
+        <img
+          src="./../images/bg-pattern-intro-right-mobile.svg"
+          srcset="./../images/bg-pattern-intro-right-mobile.svg 640w,
+                  ./../images/bg-pattern-intro-right-desktop.svg 1024w"
+          sizes="(max-width: 1024px) 640px,
+                  1024px"
+          alt="Pattern Intro Right"
+          class="w-full"
+        >
       </div>
     </section>
     <section class="px-4">
@@ -104,19 +136,19 @@
         </div>
       </div>
     </section>
-    <section id="more" class="px-4 mb-32">
-      <div class="bg-dark-violet bg-pattern-how-we-work-mobile bg-no-repeat bg-right-top lg:bg-pattern-how-we-work-desktop px-4 py-4 h-96 flex flex-col items-center justify-center gap-y-12">
-        <h2 class="text-center text-4xl text-white font-DMSerif">
-          Find out more about how we work
-        </h2>
-        <button class="btn btn--outline">
-          How we work
-        </button>
+    <section id="more" class="section__more">
+      <div class="section__more-container">
+        <div class="font-DMSerif text-4xl lg:w-80">
+          <h2 class="text-white text-center lg:text-left">Find out more about how we work</h2>
+        </div>
+        <div class="">
+          <button class="btn btn--outline">How we work</button>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="py-24 bg-pattern-footer-mobile lg:bg-pattern-footer-desktop bg-no-repeat bg-left-top bg-very-light-gray">
+    <div class="py-24 bg-very-light-gray">
       <div class="space-y-6">
         <figure class="w-3/12 mx-auto">
           <img src="./../images/logo.svg" alt="INSURE" class="w-full h-auto">
