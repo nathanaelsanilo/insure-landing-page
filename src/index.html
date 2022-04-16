@@ -62,33 +62,40 @@
     </nav>
   </header>
   <main class="">
-    <section class="relative">
-      <article class="article relative">
-        <div class="flex-1 px-5 py-20 space-y-12">
-          <div class="hidden lg:block h-px bg-very-light-gray w-1/3"></div>
-          <h2 class="article__title">Humanizing your insurance.</h2>
-          <p class="article__content">
-            Get your life insurance coverage easier and faster. We blend our expertise 
-            and technology to help you find the plan that’s right for you. Ensure you 
-            and your loved ones are protected.
-          </p>
-          <div class="text-center lg:text-left">
+    <section class="section">
+      <div class="intro bg-dark-violet">
+        <div class="flex-1 py-20 lg:py-0">
+          <div class="intro__head">
+            <div class="hidden lg:block my-8 divider divider--small divider--white"></div>
+            <h2 class="intro__title">Humanizing your insurance.</h2>
+            <p class="intro__content">
+              Get your life insurance coverage easier and faster. We blend our expertise 
+              and technology to help you find the plan that’s right for you. Ensure you 
+              and your loved ones are protected.
+            </p>
+          </div>
+          <div class="intro__action">
             <button class="btn btn--outline">View Plans</button>
           </div>
         </div>
         <div class="flex-1">
-          <img
+          <!-- <img
             src="./../images/image-intro-mobile.jpg"
             srcset="./../images/image-intro-mobile.jpg 640w,
                     ./../images/image-intro-desktop.jpg 1024w"
             sizes="(max-width: 1024px) 640px,
                     1024px"
             alt="image-intro"
-            class="w-full lg:relative lg:top-[90px]"
+            class="lg:relative lg:top-[90px]"
+          > -->
+          <img
+            src="./../images/image-intro-mobile.jpg"
+            alt="image-intro"
+            class="md:ml-auto"
           >
         </div>
-      </article>
-      <div class="absolute right-0 bottom-0 hidden">
+      </div>
+      <!-- <div class="absolute right-0 bottom-0 hidden">
         <img
           src="./../images/bg-pattern-intro-right-mobile.svg"
           srcset="./../images/bg-pattern-intro-right-mobile.svg 640w,
@@ -96,134 +103,144 @@
           sizes="(max-width: 1024px) 640px,
                   1024px"
           alt="Pattern Intro Right"
-          class="w-full"
+          class=""
         >
+      </div> -->
+    </section>
+    <section class="section">
+      <div class="different">
+        <div class="divider divider--small divider--violet divider--center lg:ml-0 my-8"></div>
+        <h2 class="different__title">We’re different</h2>
+        <div class="different__items">
+          <div class="different__item">
+            <figure class="different__logo-container">
+              <img src="./../images/icon-snappy-process.svg" alt="Snappy Process" class="different__logo">
+            </figure>
+            <h4 class="font-DMSerif font-semibold text-2xl">Snappy Process</h4>
+            <p class="leading-relaxed text-[color:var(--dark-grayish-violet)]">
+              Our application process can be completed in minutes, not hours. Don’t get 
+              stuck filling in tedious forms.
+            </p>
+          </div>
+          <div class="different__item">
+            <figure class="different__logo-container">
+              <img src="./../images/icon-affordable-prices.svg" alt="Affordable Prices" class="different__logo">
+            </figure>
+            <h4 class="font-DMSerif font-semibold text-2xl">Affordable Prices</h4>
+            <p class="leading-relaxed text-[color:var(--dark-grayish-violet)]">
+              We don’t want you worrying about high monthly costs. Our prices may be low, 
+              but we still offer the best coverage possible.
+            </p>
+          </div>
+          <div class="different__item">
+            <figure class="different__logo-container">
+              <img src="./../images/icon-people-first.svg" alt="People First" class="different__logo">
+            </figure>
+            <h4 class="font-DMSerif font-semibold text-2xl">People First</h4>
+            <p class="leading-relaxed text-[color:var(--dark-grayish-violet)]">
+              Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+              sure you’re covered when you need it.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="px-4">
-      <div class="space-y-16 py-40">
-        <div class="h-px bg-[color:var(--dark-grayish-violet)] mx-auto w-28"></div>
-        <h2 class="text-4xl font-DMSerif text-center">We’re different</h2>
-        <div class="space-y-4 text-center">
-          <figure class="w-2/12 mx-auto">
-            <img src="./../images/icon-snappy-process.svg" alt="Snappy Process" class="h-auto w-full">
-          </figure>
-          <h4 class="font-DMSerif font-semibold text-2xl">Snappy Process</h4>
-          <p class="leading-relaxed text-[color:var(--dark-grayish-violet)]">
-            Our application process can be completed in minutes, not hours. Don’t get 
-            stuck filling in tedious forms.
-          </p>
+    <section id="more" class="section lg:px-28">
+      <div class="more bg-dark-violet">
+        <div class="font-DMSerif flex-1">
+          <h2 class="text-white text-center text-4xl lg:text-6xl lg:text-left">Find out more about how we work</h2>
         </div>
-        <div class="space-y-4 text-center">
-          <figure class="w-2/12 mx-auto">
-            <img src="./../images/icon-affordable-prices.svg" alt="Affordable Prices" class="h-auto w-full">
-          </figure>
-          <h4 class="font-DMSerif font-semibold text-2xl">Affordable Prices</h4>
-          <p class="leading-relaxed text-[color:var(--dark-grayish-violet)]">
-            We don’t want you worrying about high monthly costs. Our prices may be low, 
-            but we still offer the best coverage possible.
-          </p>
-        </div>
-        <div class="space-y-4 text-center">
-          <figure class="w-2/12 mx-auto">
-            <img src="./../images/icon-people-first.svg" alt="People First" class="h-auto w-full">
-          </figure>
-          <h4 class="font-DMSerif font-semibold text-2xl">People First</h4>
-          <p class="leading-relaxed text-[color:var(--dark-grayish-violet)]">
-            Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-            sure you’re covered when you need it.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="more" class="section__more">
-      <div class="section__more-container">
-        <div class="font-DMSerif text-4xl lg:w-80">
-          <h2 class="text-white text-center lg:text-left">Find out more about how we work</h2>
-        </div>
-        <div class="">
+        <div class="flex-1 lg:text-right">
           <button class="btn btn--outline">How we work</button>
         </div>
       </div>
     </section>
   </main>
-  <footer>
-    <div class="py-24 bg-very-light-gray">
-      <div class="space-y-6">
-        <figure class="w-3/12 mx-auto">
-          <img src="./../images/logo.svg" alt="INSURE" class="w-full h-auto">
-        </figure>
-        <figure class="flex items-center space-x-4 justify-center">
+  <footer class="footer">
+    <div class="footer__header">
+      <figure class="footer__logo">
+        <img src="./../images/logo.svg" alt="INSURE" class="">
+      </figure>
+      <div class="footer__socials">
+        <figure>
           <img src="./../images/icon-facebook.svg" alt="Facebook">
+        </figure>
+        <figure>
           <img src="./../images/icon-twitter.svg" alt="Twitter">
+        </figure>
+        <figure>
           <img src="./../images/icon-pinterest.svg" alt="Pinterest">
+        </figure>
+        <figure>
           <img src="./../images/icon-instagram.svg" alt="Instagram">
         </figure>
       </div>
-      <div class="my-10 h-px w-3/4 mx-auto bg-dark-grayish-violet"></div>
-      <div class="space-y-9">
-        <div class="text-center">
-          <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">Our company</h2>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">How we work</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Why Insure?</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Check Price</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Reviews</a>
-            </li>
-          </ul>
-        </div>
-        <div class="text-center">
-          <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">Help me</h2>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">FAQ</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Terms of use</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Privacy policy</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Cookies</a>
-            </li>
-          </ul>
-        </div>
-        <div class="text-center">
-          <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">Contact</h2>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Sales</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Support</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Live chat</a>
-            </li>
-          </ul>
-        </div>
-        <div class="text-center">
-          <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">Others</h2>
-          <ul class="space-y-4">
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Careers</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Press</a>
-            </li>
-            <li>
-              <a href="#" class="font-semibold uppercase medium text-dark-violet">Licenses</a>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <div class="divider divider--violet my-8"></div>
+    <div class="footer__items">
+      <div class="footer__item">
+        <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">
+          Our company
+        </h2>
+        <ul class="footer__navs">
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">How we work</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Why Insure?</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Check Price</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Reviews</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">Help me</h2>
+        <ul class="footer__navs">
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">FAQ</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Terms of use</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Privacy policy</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Cookies</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">Contact</h2>
+        <ul class="footer__navs">
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Sales</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Support</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Live chat</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <h2 class="mb-7 uppercase font-bold text-dark-grayish-violet">Others</h2>
+        <ul class="footer__navs">
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Careers</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Press</a>
+          </li>
+          <li>
+            <a href="#" class="font-semibold uppercase medium text-dark-violet">Licenses</a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
