@@ -792,9 +792,15 @@ body.navbar--show {
 
 @media (min-width: 1024px) {
   .intro {
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .intro {
+    margin-bottom: 24rem;
   }
 }
 
@@ -808,6 +814,20 @@ body.navbar--show {
 
 .intro__head {
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .intro__head {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro__head {
+    padding-left: 0px;
+    padding-right: 4rem;
+  }
 }
 
 .intro__content {
@@ -884,8 +904,8 @@ body.navbar--show {
 
 .different__items > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  margin-top: calc(3rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3rem * var(--tw-space-y-reverse));
 }
 
 @media (min-width: 768px) {
@@ -1100,8 +1120,8 @@ body.navbar--show {
 }
 
 @media (min-width: 768px) {
-  .md\:ml-auto {
-    margin-left: auto;
+  .md\:ml-0 {
+    margin-left: 0px;
   }
 }
 
@@ -1110,12 +1130,12 @@ body.navbar--show {
     position: relative;
   }
 
-  .lg\:top-\[90px\] {
-    top: 90px;
+  .lg\:top-16 {
+    top: 4rem;
   }
 
-  .lg\:ml-0 {
-    margin-left: 0px;
+  .lg\:ml-auto {
+    margin-left: auto;
   }
 
   .lg\:block {
@@ -1143,5 +1163,11 @@ body.navbar--show {
   .lg\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:top-44 {
+    top: 11rem;
   }
 }

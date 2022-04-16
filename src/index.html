@@ -78,21 +78,15 @@
             <button class="btn btn--outline">View Plans</button>
           </div>
         </div>
-        <div class="flex-1">
-          <!-- <img
-            src="./../images/image-intro-mobile.jpg"
-            srcset="./../images/image-intro-mobile.jpg 640w,
-                    ./../images/image-intro-desktop.jpg 1024w"
-            sizes="(max-width: 1024px) 640px,
-                    1024px"
-            alt="image-intro"
-            class="lg:relative lg:top-[90px]"
-          > -->
-          <img
-            src="./../images/image-intro-mobile.jpg"
-            alt="image-intro"
-            class="md:ml-auto"
-          >
+        <div class="lg:relative lg:top-16 xl:top-44">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="./../images/image-intro-desktop.jpg">
+            <img
+              src="./../images/image-intro-mobile.jpg"
+              alt="image-intro"
+              class="lg:ml-auto"
+            >
+          </picture>
         </div>
       </div>
       <!-- <div class="absolute right-0 bottom-0 hidden">
@@ -109,7 +103,7 @@
     </section>
     <section class="section">
       <div class="different">
-        <div class="divider divider--small divider--violet divider--center lg:ml-0 my-8"></div>
+        <div class="divider divider--small divider--violet divider--center md:ml-0 my-8"></div>
         <h2 class="different__title">We’re different</h2>
         <div class="different__items">
           <div class="different__item">
