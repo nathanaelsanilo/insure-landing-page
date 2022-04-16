@@ -100,6 +100,10 @@
     @apply text-[color:var(--base-font-color)];
   }
 
+  .navbar__item:hover {
+    @apply font-bold;
+  }
+
   .btn {
     @apply border-2 py-2 px-6 uppercase;
   }
@@ -110,6 +114,14 @@
 
   .btn--violet {
     @apply border-dark-violet text-dark-violet bg-white;
+  }
+
+  .btn--outline.btn--violet:hover {
+    @apply text-white bg-dark-violet;
+  }
+
+  .btn--outline:hover {
+    @apply text-dark-violet bg-white;
   }
 
   .divider {
@@ -225,6 +237,10 @@ body.navbar--show {
 
 .footer__socials {
   @apply flex items-center space-x-3;
+}
+
+.footer__social-logo:hover {
+  @apply bg-green-100;
 }
 
 .footer__navs {
