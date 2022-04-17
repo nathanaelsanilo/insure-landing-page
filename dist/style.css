@@ -702,12 +702,52 @@ html, body {
   display: none;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
 
 .bg-dark-violet {
   background-color: var(--dark-violet);
+}
+
+.bg-pattern-intro-left-mobile {
+  background-image: url(/images/bg-pattern-intro-left-mobile.svg);
+}
+
+.bg-left-top {
+  background-position: left top;
+}
+
+.bg-right-top {
+  background-position: right top;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .py-20 {
@@ -1159,6 +1199,10 @@ body.navbar--show {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:relative {
     position: relative;
   }
@@ -1167,12 +1211,44 @@ body.navbar--show {
     top: 4rem;
   }
 
+  .lg\:top-0 {
+    top: 0px;
+  }
+
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:ml-auto {
     margin-left: auto;
   }
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:w-56 {
+    width: 14rem;
+  }
+
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
+  .lg\:bg-none {
+    background-image: none;
+  }
+
+  .lg\:bg-pattern-intro-left-desktop {
+    background-image: url(/images/bg-pattern-intro-left-desktop.svg);
+  }
+
+  .lg\:bg-pattern-intro-right-desktop {
+    background-image: url(/images/bg-pattern-intro-right-desktop.svg);
   }
 
   .lg\:py-0 {
