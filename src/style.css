@@ -239,10 +239,18 @@ body.navbar--show {
   @apply flex items-center space-x-3;
 }
 
+.footer__social-logo:hover path {
+  @apply fill-dark-violet;
+}
+
 .footer__social-logo:hover {
-  @apply bg-green-100;
+  @apply cursor-pointer;
 }
 
 .footer__navs {
   @apply space-y-3;
+}
+
+.footer__navs a:hover {
+  @apply underline underline-offset-1 decoration-very-dark-violet decoration-2;
 }

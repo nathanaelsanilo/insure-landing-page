@@ -1129,15 +1129,27 @@ body.navbar--show {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.footer__social-logo:hover path {
+  fill: var(--dark-violet);
+}
+
 .footer__social-logo:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 252 231 / var(--tw-bg-opacity));
+  cursor: pointer;
 }
 
 .footer__navs > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.footer__navs a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: hsl(270, 9%, 17%);
+          text-decoration-color: hsl(270, 9%, 17%);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 1px;
 }
 
 @media (min-width: 768px) {
